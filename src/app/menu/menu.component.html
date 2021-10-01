@@ -5,10 +5,10 @@
    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0 d-flex align-items-center" >
         <li class="nav-item active">
-<img src="https://i.imgur.com/QLDetyp.jpg" alt="Foto usuario" width="50px" height="50px" class="img-fluid rounded-circle">
+<img src="{{foto}}" alt="Foto usuario" width="50px" height="50px" class="img-fluid rounded-circle">
         </li>
         <li class="nav-item pl-3">
-         <p class="m-0 font-weight-bold text-white fs-16">NOME DO USUARIO</p>
+         <p class="m-0 font-weight-bold text-white fs-16">{{nome}}</p>
         </li>
         <li class="nav-item pl-3">
             <a href="">
@@ -19,7 +19,7 @@
      </div>
      <ul class="navbar-nav ml-auto mt-2 mt-lg-0 d-flex align-items-center" >
         <li class="nav-item pl-3">
-            <a class="m-0 font-weight-bold text-white fs-16">Sair <i class="fa fa-sign-out" aria-hidden="true"></i></a>
+            <a (click)='sair()' class="m-0 font-weight-bold text-white fs-16">Sair <i class="fa fa-sign-out" aria-hidden="true"></i></a>
            </li>
      </ul>
   </nav>
