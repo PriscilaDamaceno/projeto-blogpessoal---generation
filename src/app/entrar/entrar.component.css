@@ -5,6 +5,7 @@ min-height: 695px;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
+
 }
 
 .purple {
@@ -15,3 +16,4 @@ background-size: cover;
   .purple:hover {
     background-color: #B573D0;
   }
+  

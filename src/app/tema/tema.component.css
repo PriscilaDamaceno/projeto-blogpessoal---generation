@@ -1,0 +1,17 @@
+.purple {
+    background-color: #9b59b6;
+    box-shadow: 0px 5px 0px 0px #82409D;
+  }
+  
+  .purple:hover {
+    background-color: #B573D0;
+  }
+  
+  .danger {
+    background-color: #d14f4a;
+    box-shadow: 0px 5px 0px 0px #cf1e1e;
+  }
+  
+  .danger:hover {
+    background-color: #d39e9c;
+  }
