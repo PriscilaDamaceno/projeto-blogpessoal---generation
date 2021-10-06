@@ -19,7 +19,7 @@ getAllTema(): Observable<Tema[]>{
 
 }
 getByIdTema(id: number): Observable<Tema>{
-return this.http.get<Tema>(`https://pridamaceno.herokuapp.com/${id}`, this.token)
+return this.http.get<Tema>(`https://pridamaceno.herokuapp.com/temas/${id}`, this.token)
 }
 
 postTema(tema: Tema): Observable<Tema>{
