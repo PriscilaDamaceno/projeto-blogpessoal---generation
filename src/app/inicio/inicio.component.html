@@ -73,20 +73,23 @@
                             <p class="card-text mt-3">{{item.texto}}</p>
                             <p class="card-text"><small class="text-muted">{{item.data | date: 'dd/MM/yyyy'}} às
                                     {{item.data | date: 'HH:mm'}}</small></p>
-                        </div>
+                        <button type="submit" class="btn btn purple mr-3"><a [routerLink]="['/postagem-edit']">Editar</a></button>
+                        <button type="submit" class="btn btn danger"><a [routerLink]="['/postagem-delete']">Deletar</a></button>
+                        
+                                </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="tab-pane fade" id="postagemTema" role="tabpanel" aria-labelledby="nav-postagemTema-tab">
-            <div class="card-columns" *ngForm='let item of listaTemas'>
-                <div class="card text-center" *ngFor='let item.usuario.postagem'>
+            <div class="card-columns" *ngFor='let tema of listaTemas'>
+                <div class="card text-center" *ngFor='let postagem of tema.postagem'>
                     <div class="card-body">
-                        <h5 class="card-title m-0">{{item.titulo}}</h5>
-              <p class="card-text mt-3">{{item.texto}}</p>
-                        <p class="card-text"><small class="text-muted">{{item.data | date: 'dd/MM/yyyy'}} às {{item.data
+                        <h5 class="card-title m-0">{{postagem.titulo}}</h5>
+              <p class="card-text mt-3">{{postagem.texto}}</p>
+                        <p class="card-text"><small class="text-muted">{{postagem.data | date: 'dd/MM/yyyy'}} às {{postagem.data
                                 | date: 'HH:mm'}}</small></p>
-                        
+                                <p class="card-text"><small class="text-muted">Por: {{postagem.usuario.nome}}</small></p>
 
                     </div>
                 </div>
